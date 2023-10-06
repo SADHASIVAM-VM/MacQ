@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restarunt</title>
+    <link rel="stylesheet" href="sstyle.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- online cdn -->
+    <!-- reference <i class="bi bi-arrow-return-right"></i> -->
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a88b1dff0.js" crossorigin="anonymous"></script>
+    <style>
+      .container-md{
+        background: hsl(0, 0%, 0%);
+        height:100px;
+        
+    }
+    .posi{
+        position: sticky;
+    }
+    .nav a{
+        text-decoration: none;
+        color:white;
+    }
+    .nav a:hover{
+        color:#ccc;
+    }
+    .ff{
+       
+        font-family:cursive;
+        font-size:medium;
+        font-style: italic;
+        
+    }
+    ul{
+        color:white;
+    }
+    img{
+        width:100vw;
+        height:550px;
+        
+    }
+    nav a:hover{
+        transition: .3s;
+        background: #000000;
+    
+    }
+    i{
+        
+        color:red;
+        font-size: 80px;
+    }
+    footer li{
+        list-style: none;
+        font-family: monospace;
+        font-weight: 100;
+        font-style: italic;
+    }
+    .clr{
+      color:darksalmon;
+    }
+    
+    
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm  sticky-top " id="home">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Mac<span class="text-warning display-5" >Q</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#na" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="na" >
+        <ul class="navbar-nav ms-auto text-center " >
+          <li class="nav-item px-2 "><a href="#homes" class="nav-link">Home</a></li>
+          <li class="nav-item px-2"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item px-2"><a href="#chefs" class="nav-link">Chefs</a></li>
+          <li class="nav-item px-2"><a href="#menu" class="nav-link">Menus</a></li>
+        </ul>   
+      </div>
+    </div>
+  </nav>
+
+  <!-- slider -->
+   
+      <div class="grid img-container  mt-4 " id="homes" >
+      <div id="carouselExampleCaptions" class="carousel slide" >
+          <div class="carousel-indicators" >
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner container-lg ">
+            <div class="carousel-item active">
+              <img src="immg1.webp" class="d-block w-100" alt="img1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="immg2.webp" class="d-block w-100" alt="img2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgm3.webp" alt="img-3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item img-fulid">
+              <img src="immg4.webp" alt="img-4">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fourth slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+<!-- paragraph -->
+   <section id="menu">
+    <div class="container">
+      <div class="grid">
+        <div class="row text-center  ">
+          <div class="col-sm-4">
+            <i class="fa-solid fa-utensils mt-5 text-dark"></i>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere cumque illo eos placeat. Architecto ipsa assumenda, exercitationem fugit sed explicabo. Officiis quos animi asperiores, numquam recusandae accusamus ratione blanditiis perferendis velit repellendus alias, repudiandae et dignissimos explicabo tempora soluta. Quam, maiores officiis? Sapiente quibusdam, asperiores voluptates fugiat nobis architecto.
+            </p>
+          </div>
+          <div class="col-sm-4 ">
+            <i class="fa-solid fa-kitchen-set mt-5 clr"></i>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere cumque illo eos placeat. Architecto ipsa assumenda, exercitationem fugit sed explicabo. Officiis quos animi asperiores, numquam recusandae accusamus ratione blanditiis perferendis velit repellendus alias, repudiandae et dignissimos explicabo tempora soluta. Quam, maiores officiis? Sapiente quibusdam, asperiores voluptates fugiat nobis architecto.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <i class="fa-solid fa-pizza-slice mt-5 text-primary"></i>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere cumque illo eos placeat. Architecto ipsa assumenda, exercitationem fugit sed explicabo. Officiis quos animi asperiores, numquam recusandae accusamus ratione blanditiis perferendis velit repellendus alias, repudiandae et dignissimos explicabo tempora soluta. Quam, maiores officiis? Sapiente quibusdam, asperiores voluptates fugiat nobis architecto.
+            </p>
+          </div>
+          <div class="col-sm">
+            <i class="fa-solid fa-cheese mt-5 text-info"></i>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere cumque illo eos placeat. Architecto ipsa assumenda, exercitationem fugit sed explicabo. Officiis quos animi asperiores, numquam recusandae accusamus ratione blanditiis perferendis velit repellendus alias, repudiandae et dignissimos explicabo tempora soluta. Quam, maiores officiis? Sapiente quibusdam, asperiores voluptates fugiat nobis architecto.
+            </p>
+          </div>
+          <div class="col-sm lead">
+            <i class="fa-solid fa-burger mt-5 text-warning"></i>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere cumque illo eos placeat. Architecto ipsa assumenda, exercitationem fugit sed explicabo. Officiis quos animi asperiores, numquam recusandae accusamus ratione blanditiis perferendis velit repellendus alias, repudiandae et dignissimos explicabo tempora soluta. Quam, maiores officiis? Sapiente quibusdam, asperiores voluptates fugiat nobis architecto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- items -->
+   <section>
+    <div class="container-fluid bg-dark text-white">
+      <div class="grid">
+        <div class="row align-items-center p-5 ">
+          <div class="col-sm-6 d-flex algin-self-center mb-5">
+            <img src="img1.avif" alt="img12" style="height: 250px; width:250px;">
+          </div>
+          <div class="col-sm-6 align-items-center" >
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nulla in dolorem omnis ipsam reprehenderit numquam ex nesciunt ducimus! Veritatis facere molestiae eligendi delectus maxime iusto deserunt, accusantium adipisci doloremque vero quam placeat corporis aspernatur consequatur repudiandae qui fugit ratione. Veritatis repellat, porro eligendi laboriosam aut iste totam! Architecto, tempora!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+<!-- second para -->
+   <section>
+    <div class="container-fluid  text-center">
+      <div class="grid">
+        <div class="row p-5 justify-content-between align-items-center">
+          <div class="col-sm-6 " >
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nulla in dolorem omnis ipsam reprehenderit numquam ex nesciunt ducimus! Veritatis facere molestiae eligendi delectus maxime iusto deserunt, accusantium adipisci doloremque vero quam placeat corporis aspernatur consequatur repudiandae qui fugit ratione. Veritatis repellat, porro eligendi laboriosam aut iste totam! Architecto, tempora!
+            </p>
+          </div>
+          <div class="col-sm-4 ">
+            <img src="img2.avif" alt="img12" style="height: 250px; width:250px;">
+          </div>
+         
+        </div>
+      </div>
+    </div>
+   </section>
+<!-- third para -->
+
+<section>
+  <div class="container-fluid bg-dark text-white">
+    <div class="grid">
+      <div class="row align-items-center p-5 ">
+        <div class="col-sm-6 d-flex algin-self-center mb-5">
+          <img src="img3.avif" alt="img12" style="height: 250px; width:250px;">
+        </div>
+        <div class="col-sm-6 align-items-center" >
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nulla in dolorem omnis ipsam reprehenderit numquam ex nesciunt ducimus! Veritatis facere molestiae eligendi delectus maxime iusto deserunt, accusantium adipisci doloremque vero quam placeat corporis aspernatur consequatur repudiandae qui fugit ratione. Veritatis repellat, porro eligendi laboriosam aut iste totam! Architecto, tempora!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+<!-- cards -->
+<section id="chefs">
+<div class="chefs">
+  <div class="container">
+    <div class="grid  ">
+      <div class="row text-center p-5">
+        <div class="col-sm-6 mb-5 ">
+          <div class="card shadow">
+            <img src="./57.png" alt=""  class="img-fluid m-auto mt-3">
+            
+            <div class="card-body">
+              <p class="card-title display-6">Dhoni</p>
+              <p class="text-muted">chefs</p>
+              <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reiciendis!</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card shadow">
+          <img src="./andrew_tate_bbc.jpg" alt=""  class="img-fluid m-auto mt-3">
+          
+          <div class="card-body">
+            <p class="card-title display-6">andrew</p>
+            <p class="text-muted">chefs</p>
+            <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reiciendis!</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="grid  ">
+    <div class="row text-center p-5">
+      <div class="col-sm-6 mb-5 ">
+        <div class="card shadow">
+          <img src="./57.png" alt=""  class="img-fluid m-auto mt-3">
+          
+          <div class="card-body">
+            <p class="card-title display-6">M S D</p>
+            <p class="text-muted">chefs</p>
+            <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reiciendis!</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card shadow">
+        <img src="./andrew_tate_bbc.jpg" alt=""  class="img-fluid m-auto mt-3">
+        
+        <div class="card-body">
+          <p class="card-title display-6">andrew</p>
+          <p class="text-muted">chefs</p>
+          <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reiciendis!</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- footer -->
+
+<footer class="footer bg-success p-5" id="contact">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <ul>
+        <p class="display-4">Contact</p>
+        <li class="">
+          phone:0934749943
+        </li>
+        <li>email : macq.in@gmail.com</li>
+      </ul>
+    </div>
+    <!-- contact -->
+    <div class="col-sm-4">
+      <input type="text" placeholder="name" class="form-control mb-2">
+      <input type="text" placeholder="email" class="form-control mb-2">
+      <textarea  placeholder="feedback" class="form-control mb-2"></textarea>
+      <input type="submit" class="btn btn-warning form-control" value="enter">
+    </div>
+
+  </div>
+</div>
+<p class="text-center mt-5 text-info ">&copy reserved by @ MacQ <br> <span class="display-5 text-warning ">The Quality Tells brand Name</span></p>
+</footer>
+</body>
+</html>
